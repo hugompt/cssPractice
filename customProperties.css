@@ -1,0 +1,18 @@
+/* 
+To declare custom CSS variables one must type
+-- and choose a name for the variable
+
+To call the custom variable, one must type
+var(variableName goes here)
+*/
+
+.error-modal{
+    --color-error-text: red;
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+}
+
